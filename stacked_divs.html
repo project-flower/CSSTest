@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Stacked Divs - CSS Test</title>
+  </head>
+  <body>
+    <div style="align-items: center; background-color: blueviolet; display: flex; flex-direction: column; margin: auto; padding: 10px; width: 90%">
+      <p>あいうえお</p>
+      <!-- text-align の効果なし -->
+      <p style="text-align: left;">かきくけこ</p>
+      <div style="background-color: darkgreen; display: flex; flex-direction: row; padding: 10px; width: 90%">
+        <div style="background-color: aquamarine; display: flex; flex-direction: column; margin: auto; padding: 10px; width: 50%">
+            <!-- p text-align でセンタリング -->
+            <p style="text-align: center;">あいうえお</p>
+          <div style="background-color: deeppink; height: 500px; margin: auto; width: 90%">
+          </div>
+        </div>
+        <div style="align-items: center; background-color: chocolate; display: flex; flex-direction: column; margin: auto; padding: 10px; width: 50%">
+          <!-- 親div align-items でセンタリング -->
+          <p>あいうえお</p>
+          <div style="background-color: deeppink; height: 500px; margin: auto; width: 90%">
+         </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
